@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Instructor AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <!-- <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google AI Logo" class="logo"> -->
+            <h1>DSA Instructor AI</h1>
+            <p>Ask me anything about Data Structures and Algorithms. Don't ask anything else... or else.</p>
+        </header>
+
+        <main>
+            <div class="input-area">
+                <textarea id="userInput" placeholder="e.g., Give me a beginner road map for DSA..."></textarea>
+                <button id="submitBtn">Ask </button>
+            </div>
+
+            <div class="response-area">
+                <div id="loader" class="hidden">
+                    <div class="spinner"></div>
+                    <p>Thinking...</p>
+                </div>
+                <div id="responseContainer">
+                    <p class="placeholder-text">Your answer will appear here.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Google AI SDK -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/generative-ai/+esm"></script>
+    
+    <!-- Marked.js for Markdown to HTML conversion -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <!-- Your custom script -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
