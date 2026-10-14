@@ -1,7 +1,7 @@
 // Import the GoogleGenerativeAI class from the SDK
 import { GoogleGenerativeAI } from "https://cdn.jsdelivr.net/npm/@google/generative-ai/+esm";
 
-const API_KEY = "AIzaSyCQ7SrR9zVBQLWVkZvKg4VEEyTKfNtagoM"; 
+const API_KEY = process.env.GEMINI_API_KEY; 
 
 // --- DOM Elements ---
 const userInputEl = document.getElementById("userInput");

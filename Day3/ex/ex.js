@@ -3,7 +3,7 @@
 import { GoogleGenAI } from "@google/genai";
 import readlineSync from 'readline-sync';
 
-const ai = new GoogleGenAI({ apiKey: "AIzaSyB9vpG8Q1QgJ6TPUzx02ljq0j1YhZWTM60" });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const History = []
 

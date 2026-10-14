@@ -2,7 +2,7 @@ import { GoogleGenAI } from '@google/genai';
 import readlineSync from 'readline-sync';
 
 const History = [];
-const ai = new GoogleGenAI({ apiKey: "AIzaSyDPuYHgXBWmP-QlQA8PXEHiFYhPxhXsWxA" });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 // Helper functions
 function sum({ num1, num2 }) {
