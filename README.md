@@ -37,4 +37,4 @@ The JavaScript files read `process.env.GEMINI_API_KEY`. Never paste a real key i
 
 ## Repository hygiene
 
-A root `.gitignore` now excludes `node_modules/` and environment files. The repository already contains tracked `node_modules` directories, however; adding `.gitignore` alone does not untrack them. A separate cleanup should remove those dependency folders from version control while retaining each `package-lock.json`.
+A root `.gitignore` now excludes `node_modules/` and environment files. The PR also removes the previously tracked `node_modules` directories while retaining each `package-lock.json`. Run `npm install` inside the relevant day folder to restore dependencies locally.
