@@ -1,6 +1,6 @@
 /*import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: "AIzaSyAyRU7FRw65C7bOIb0OiYnRIS8oWhgEuos" });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 async function main() {
   const response = await ai.models.generateContent({
@@ -25,7 +25,7 @@ import { GoogleGenAI } from "@google/genai";
 
 import readlineSync from "readline-sync";
 
-const ai =new GoogleGenAI({ apiKey: "AIzaSyAyRU7FRw65C7bOIb0OiYnRIS8oWhgEuos" });
+const ai =new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const History =[];
 async function Chatting(userProblem) {
